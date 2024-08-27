@@ -1,0 +1,21 @@
+spring:
+    config:
+        activate:
+            on-profile: dev
+
+server:
+    port: 8083
+
+eureka:
+    client:
+        fetch-registry: true
+        service-url:
+            defaultZone:
+                http://admin:1234@localhost:8761/eureka
+    instance:
+        pref₩er-ip-address: true
+
+
+feign:
+    bookstore:
+        url: localhost:8080

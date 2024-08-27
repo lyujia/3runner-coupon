@@ -1,0 +1,51 @@
+### Read Coupon Form
+POST http://localhost:8083/coupon/members/forms
+Content-Type: application/json
+
+{
+  "couponFormIds": [8, 9, 10]
+}
+
+###
+
+### Create Coupon Form
+POST http://localhost:8083/coupon/forms
+Content-Type: application/json
+
+{
+  "startDate": "2024-07-01T00:00:00Z",
+  "endDate": "2024-12-31T23:59:59Z",
+  "name": "New Year Coupon",
+  "maxPrice": 10000,
+  "minPrice": 1000,
+  "couponTypeId": 5,
+  "couponUsageId": 3
+}
+
+### Create Coupon Form
+POST http://localhost:8083/coupon/forms
+Content-Type: application/json
+
+{
+  "startDate": "2024-07-01T00:00:00Z",
+  "endDate": "2024-12-31T23:59:59Z",
+  "name": "New Year Coupon",
+  "maxPrice": 10000,
+  "minPrice": 1000,
+  "couponTypeId": 6,
+  "couponUsageId": 3
+}
+
+### Create Coupon Form
+POST http://localhost:8083/coupon/forms
+Content-Type: application/json
+
+{
+  "startDate": "2024-07-01T00:00:00Z",
+  "endDate": "2024-12-31T23:59:59Z",
+  "name": "New Year Coupon",
+  "maxPrice": 10000,
+  "minPrice": 1000,
+  "couponTypeId": 5,
+  "couponUsageId": 5
+}

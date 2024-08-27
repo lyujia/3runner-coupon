@@ -1,0 +1,19 @@
+spring:
+    config:
+        activate:
+            on-profile: prod
+
+
+
+eureka:
+    client:
+        fetch-registry: true
+        service-url:
+            defaultZone:
+                http://admin:1234@eureka:8761/eureka
+    instance:
+        pref₩er-ip-address: true
+
+feign:
+    bookstore:
+        url: gateway:8080

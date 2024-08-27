@@ -1,0 +1,74 @@
+### Create Fixed Coupon Policy
+POST http://localhost:8083/coupon/types/fixes
+Content-Type: application/json
+
+{
+  "discountPrice": 1000
+}
+
+###
+
+### Create Ratio Coupon Policy
+POST http://localhost:8083/coupon/types/ratios
+Content-Type: application/json
+
+{
+  "discountRate": 0.05,
+  "discountMaxPrice": 2000
+}
+
+###
+
+### Create Category Coupon Policy
+POST http://localhost:8083/coupon/usages/categories
+Content-Type: application/json
+
+{
+  "categoryIds": [1, 2, 3, 4]
+}
+
+###
+
+### Create Book Coupon Policy
+POST http://localhost:8083/coupon/usages/books
+Content-Type: application/json
+
+{
+  "bookIds": [101, 102, 103]
+}
+
+###
+
+### Read All Coupon Types
+GET http://localhost:8083/coupon/types
+Content-Type: application/json
+
+###
+
+### Read Fixed Coupon Type by ID
+GET http://localhost:8083/coupon/types/fixes/1
+Content-Type: application/json
+
+###
+
+### Read Ratio Coupon Type by ID
+GET http://localhost:8083/coupon/types/ratios/1
+Content-Type: application/json
+
+###
+
+### Read All Coupon Usages
+GET http://localhost:8083/coupon/usages
+Content-Type: application/json
+
+###
+
+### Read Category Usages by Coupon Type ID
+GET http://localhost:8083/coupon/usages/categories/1
+Content-Type: application/json
+
+###
+
+### Read Book Usages by Coupon Type ID
+GET http://localhost:8083/coupon/usages/books/1
+Content-Type: application/json
